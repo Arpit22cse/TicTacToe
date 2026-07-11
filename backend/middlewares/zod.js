@@ -9,10 +9,11 @@ const userSchema = z.object({
       .email({ message: "Invalid email address" })
       .regex(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, { message: "Eneter a valid Email" }),
     password: z
-      .string()
-      .min(8, { message: "Password must be at least 8 characters long" })
-      .max(16, { message: "password length must not be greater than 16"})
-      .regex(/^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$/, { message: "Password must be alphanumeric" }),
+        .string()
+        .min(8, { message: "Password must be at least 8 characters long" })
+        .max(16, { message: "Password length must not be greater than 16" })
+        .regex(/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/, {
+        message: "Password must contain letters, numbers, and at least one special character" }),
     confirmPassword: z
       .string()
       .min(8, { message: "Password must be at least 8 characters long" })

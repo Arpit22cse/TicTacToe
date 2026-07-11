@@ -5,7 +5,7 @@ const express=require('express');
 const checkParameter=require('../middlewares/zod')
 const router =express.Router();
 const jwt=require('jsonwebtoken')
-const nanoid=require('nanoid');
+const { nanoid }=require('nanoid');
 const JWT_SECRET=process.env.SECRET_KEY;
 
 router.post('/', checkParameter, async (req, res, next) => {
