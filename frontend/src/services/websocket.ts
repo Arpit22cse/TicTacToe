@@ -1,8 +1,4 @@
-import { GameAction, GameState } from '../types/game';
-import { useAuth } from '../contexts/AuthContext';
-//const auth = useAuth();
-// Removed unused import 'useAuth' and fixed the module path issue
-// Removed unused import 'useAuth'
+
 class WebSocketService {
   private socket: WebSocket | null = null;
   private url: string;
@@ -140,6 +136,6 @@ class WebSocketService {
 }
 
 // Create a singleton instance
-const websocketService = new WebSocketService('wss://backend-6qxr.onrender.com');
+const websocketService = new WebSocketService('wss://tictactoe-09q5.onrender.com');
 
 export default websocketService;

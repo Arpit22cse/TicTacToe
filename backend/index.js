@@ -28,7 +28,8 @@ const app = express();
 app.use(cors({
   origin: [
     'https://portfolio-umber-mu-89.vercel.app',
-    'https://instagram-gray-six.vercel.app'
+    'https://instagram-gray-six.vercel.app',
+    'https://tic-tac-toe-liart-gamma-75.vercel.app'
   ], // Allow both deployed frontend and local dev
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],

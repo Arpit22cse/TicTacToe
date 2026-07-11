@@ -1,8 +1,8 @@
-import { LoginCredentials, SignupCredentials, User } from '../types/auth';
-import { Room } from '../types/game';
+import { LoginCredentials, SignupCredentials } from '../types/auth';
 
-// Replace with your API base URL
-const API_BASE_URL = 'https://backend-6qxr.onrender.com';
+
+
+const API_BASE_URL = 'https://tictactoe-09q5.onrender.com';
 
 // Helper for handling API responses
 const handleResponse = async (response: Response) => {
